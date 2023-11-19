@@ -1,0 +1,43 @@
+@import "../../../config.scss/rem-calc.scss";
+
+:host {
+  .header {
+    border-bottom: rem-calc(1) solid var(--light-text);
+    border-radius: 0 0 rem-calc(8) rem-calc(8);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: rem-calc(70);
+    overflow: hidden;
+    width: 100vw;
+
+    div {
+      h2 {
+        font-size: rem-calc(42);
+        color: var(--light-text);
+      }
+    }
+
+    div {
+      ul {
+        display: flex;
+        gap: rem-calc(25);
+
+        li {
+          a {
+            text-decoration: none;
+            color: var(--light-text);
+            font-size: rem-calc(20);
+            transition: color 0.2s ease;
+          }
+
+          a:hover {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
