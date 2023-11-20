@@ -15,6 +15,7 @@
     div {
       h2 {
         font-size: rem-calc(42);
+        font-style: italic;
         color: var(--primary);
 
         span {
@@ -52,11 +53,59 @@
 
 :host {
   @media screen and (max-width: rem-calc(620)) {
+    // botao mobile(hamburguer)
     #btn-mobile {
-      display: block;
+      display: flex;
+      margin-right: rem-calc(20);
+
+      border: none;
+      background: none;
+
+      color: white;
+      cursor: pointer;
+
+      #hamburguer {
+        border-top: rem-calc(2) solid;
+        width: rem-calc(20);
+      }
+      // Criaçao de riscos iguais para o icon
+      #hamburguer::after,
+      #hamburguer::before {
+        content: "";
+        display: block;
+        position: relative;
+
+        width: rem-calc(20);
+        height: rem-calc(2);
+        margin-top: rem-calc(5);
+
+        background-color: currentColor;
+        transition: all 0.3s;
+      }
+    }
+    // Deixando o primeiro risco transparente
+    #nav.activate #hamburguer {
+      border-top-color: transparent;
+    }
+    // Rotacionando os dois riscos de baixo
+    #nav.activate #hamburguer::before {
+      transform: rotate(-135deg);
+    }
+    #nav.activate #hamburguer::after {
+      transform: rotate(135deg);
+      top: rem-calc(-7);
+    }
+    // Deixando eles vermelhos quando passar o mouse
+    #btn-mobile:hover {
+      color: var(--primary);
+      #hamburguer::after,
+      #hamburguer::before {
+        background-color: currentColor;
+      }
     }
 
     .header {
+      justify-content: space-between;
       .menu {
         display: block;
         position: absolute;
@@ -73,7 +122,7 @@
       }
 
       #nav.activate .menu {
-        height: calc(100vh - 70px);
+        height: calc(100vh - 4.375rem);
         visibility: visible;
 
         background-color: rgb(24, 22, 22);
@@ -86,6 +135,10 @@
 
           text-align: center;
           border-bottom: rem-calc(2) solid rgba(170, 170, 170, 0.05);
+
+          a {
+            font-style: italic;
+          }
         }
       }
     }
