@@ -2,5 +2,7 @@
 @import "./config.scss/reset.scss";
 
 body {
-  background: var(--back-ground);
+  background: var(--background);
+
+  font-family: "Roboto", sans-serif;
 }
