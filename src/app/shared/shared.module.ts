@@ -4,9 +4,9 @@ import { CommonModule } from '@angular/common';
 //Meus Components
 import { AboutMeComponent } from './about-me/about-me.component';
 import { HeaderComponent } from './header/header.component';
-import { InicioComponent } from './inicio/inicio.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [],
@@ -14,7 +14,7 @@ import { SkillsComponent } from './skills/skills.component';
     CommonModule,
     AboutMeComponent,
     HeaderComponent,
-    InicioComponent,
+    HomeComponent,
     ProjectsComponent,
     SkillsComponent,
   ],
@@ -22,7 +22,7 @@ import { SkillsComponent } from './skills/skills.component';
     CommonModule,
     AboutMeComponent,
     HeaderComponent,
-    InicioComponent,
+    HomeComponent,
     ProjectsComponent,
     SkillsComponent,
   ],
