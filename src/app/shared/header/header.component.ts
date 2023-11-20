@@ -1,4 +1,4 @@
-import { Component, Renderer2 } from '@angular/core';
+import { Component, ElementRef, Renderer2 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,11 +9,16 @@ import { CommonModule } from '@angular/common';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  constructor() {}
+  constructor(private renderer: Renderer2, private element: ElementRef) {}
 
   toggleMenu(): void {
-    const nav: HTMLElement | null = document.getElementById('nav');
+    const nav: HTMLElement | null =
+      this.element.nativeElement.querySelector('#nav');
 
-    nav?.classList.toggle('active');
+    if (nav?.classList.contains('activate')) {
+      this.renderer.removeClass(nav, 'activate');
+    } else {
+      this.renderer.addClass(nav, 'activate');
+    }
   }
 }
