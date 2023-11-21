@@ -39,8 +39,14 @@
           font-size: rem-calc(20);
           transition: color 0.2s ease;
         }
+        a.select {
+          color: var(--primary);
+        }
         a:hover {
           color: white;
+        }
+        a.select:hover {
+          color: var(--primary);
         }
       }
     }
