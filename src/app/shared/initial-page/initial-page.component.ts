@@ -6,6 +6,9 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './initial-page.component.html',
-  styleUrl: './initial-page.component.scss',
+  styleUrls: [
+    './initial-page.component.scss',
+    './initial-page.responsivity.scss',
+  ],
 })
 export class InitialPageComponent {}

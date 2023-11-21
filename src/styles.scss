@@ -1,11 +1,24 @@
-@import "./config.scss/variables.scss";
 @import "./config.scss/reset.scss";
-@import "./config.scss/scrollBar.scss";
+@import "./config.scss/rem-calc.scss";
 
+// Declaração de variávei
+:root {
+  --background-header: rgb(17, 16, 16);
+  --background: #1d1c1c;
+  --white-text: #ffffff;
+  --light-text: #b3b3b3;
+  --primary: rgb(221, 11, 11);
+}
+
+// Configurações basicas da página
 body {
-  background: var(--background);
-
   font-family: "Roboto", sans-serif;
-
+  background: var(--background);
   overflow-x: hidden;
+  overflow-y: auto;
+}
+
+// Ocultando a scrollBar
+body::-webkit-scrollbar {
+  width: rem-calc(0);
 }
