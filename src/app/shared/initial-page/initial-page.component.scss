@@ -11,13 +11,15 @@
     overflow-x: hidden;
 
     width: 75%;
-    height: calc(100vh - 20rem);
-    margin: 8rem auto;
+    height: 80%;
+    margin: auto;
+    margin-top: rem-calc(220);
 
     .content {
       display: flex;
       flex-direction: column;
       justify-content: center;
+
       h1 {
         font-size: rem-calc(56);
         margin-bottom: $smallPadding;
@@ -40,24 +42,26 @@
       img {
         width: $size;
         height: $size;
-        border-radius: rem-calc(20);
         margin: rem-calc(16);
+
+        border-radius: rem-calc(20);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
       }
       p {
-        border: rem-calc(1) solid gray;
-        border-radius: rem-calc(4);
-        width: $size;
         color: white;
+        border-radius: rem-calc(4);
+        border: rem-calc(1) solid gray;
 
+        width: $size;
         padding: $smallPadding 0;
 
         .cube {
           width: rem-calc(40);
-
           padding: 0 $smallPadding;
           margin: $smallPadding;
+
           border-radius: rem-calc(2);
-          background-color: red;
+          background-color: var(--primary);
         }
       }
     }
@@ -70,13 +74,15 @@
       display: flex;
       flex-direction: column;
 
-      height: 100%;
+      height: 80%;
       width: 90%;
-      margin-top: rem-calc(50);
+
+      margin-top: rem-calc(90);
       gap: rem-calc(16);
 
       .content {
         align-items: center;
+
         h1 {
           font-size: rem-calc(45);
         }
@@ -90,10 +96,18 @@
 
 @media screen and (max-width: rem-calc(375)) {
   // Variavel para tamanho da img e div abaixo
-  $size: rem-calc(280);
+  $size: rem-calc(260);
 
   :host {
     .initial-page {
+      .content {
+        h1 {
+          font-size: rem-calc(38);
+        }
+        h2 {
+          font-size: rem-calc(26);
+        }
+      }
       .img {
         img {
           width: $size;
@@ -105,29 +119,29 @@
       }
     }
   }
-}
 
-@media screen and (max-width: rem-calc(320)) {
-  // Variavel para tamanho da img e div abaixo
-  $size: rem-calc(240);
+  @media screen and (max-width: rem-calc(320)) {
+    // Variavel para tamanho da img e div abaixo
+    $size: rem-calc(240);
 
-  :host {
-    .initial-page {
-      .content {
-        h1 {
-          font-size: rem-calc(35);
+    :host {
+      .initial-page {
+        .content {
+          h1 {
+            font-size: rem-calc(35);
+          }
+          h2 {
+            font-size: rem-calc(24);
+          }
         }
-        h2 {
-          font-size: rem-calc(24);
-        }
-      }
-      .img {
-        img {
-          width: $size;
-          height: $size;
-        }
-        p {
-          width: $size;
+        .img {
+          img {
+            width: $size;
+            height: $size;
+          }
+          p {
+            width: $size;
+          }
         }
       }
     }
