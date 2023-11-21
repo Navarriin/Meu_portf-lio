@@ -6,7 +6,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { HeaderComponent } from './header/header.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
-import { HomeComponent } from './home/home.component';
+import { InitialPageComponent } from './initial-page/initial-page.component';
 
 @NgModule({
   declarations: [],
@@ -14,7 +14,7 @@ import { HomeComponent } from './home/home.component';
     CommonModule,
     AboutMeComponent,
     HeaderComponent,
-    HomeComponent,
+    InitialPageComponent,
     ProjectsComponent,
     SkillsComponent,
   ],
@@ -22,7 +22,7 @@ import { HomeComponent } from './home/home.component';
     CommonModule,
     AboutMeComponent,
     HeaderComponent,
-    HomeComponent,
+    InitialPageComponent,
     ProjectsComponent,
     SkillsComponent,
   ],

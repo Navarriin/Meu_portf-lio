@@ -2,12 +2,10 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-initial-page',
+  selector: 'initial-page',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './initial-page.component.html',
-  styleUrl: './initial-page.component.scss'
+  styleUrl: './initial-page.component.scss',
 })
-export class InitialPageComponent {
-
-}
+export class InitialPageComponent {}

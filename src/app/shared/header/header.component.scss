@@ -112,12 +112,13 @@
 
     .header {
       justify-content: space-between;
+      width: calc(100vw - 20px);
       .menu {
         display: block;
         position: absolute;
         visibility: hidden;
 
-        width: 100%;
+        width: 100vw;
         height: 0;
         z-index: 1000;
         top: rem-calc(70);
