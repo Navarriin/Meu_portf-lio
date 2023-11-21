@@ -10,7 +10,8 @@
     overflow: hidden;
     width: 100vw;
 
-    background-color: rgb(24, 22, 22);
+    background-color: var(--background-header);
+    box-shadow: rgba(61, 61, 61, 0.25) 0px 4px 4px;
 
     div {
       h2 {
@@ -112,7 +113,7 @@
 
     .header {
       justify-content: space-between;
-      width: calc(100vw - 20px);
+      width: 100vw;
       .menu {
         display: block;
         position: absolute;
@@ -132,7 +133,7 @@
         height: calc(100vh - 4.375rem);
         visibility: visible;
 
-        background-color: rgb(24, 22, 22);
+        background-color: var(--background-header);
       }
 
       .menu {

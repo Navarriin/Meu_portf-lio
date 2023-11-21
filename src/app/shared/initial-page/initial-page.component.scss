@@ -7,7 +7,7 @@
     overflow-x: hidden;
 
     width: 75%;
-    height: 30rem;
+    height: calc(100vh - 20rem);
     margin: 8rem auto;
 
     .content {
@@ -56,6 +56,20 @@
           background-color: red;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: rem-calc(620)) {
+  :host {
+    .initial-page {
+      display: flex;
+      flex-direction: column;
+
+      height: 100%;
+      width: 90%;
+      margin-top: rem-calc(50);
+      gap: rem-calc(16);
     }
   }
 }
