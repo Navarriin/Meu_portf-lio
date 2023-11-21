@@ -1,6 +1,10 @@
 @import "../../../config.scss/rem-calc.scss";
 
 :host {
+  // Variáveis pada facilitar leitura
+  $size: rem-calc(320);
+  $smallPadding: rem-calc(8);
+
   .initial-page {
     display: flex;
     justify-content: space-around;
@@ -16,7 +20,7 @@
       justify-content: center;
       h1 {
         font-size: rem-calc(56);
-        margin-bottom: rem-calc(8);
+        margin-bottom: $smallPadding;
 
         color: white;
       }
@@ -34,24 +38,24 @@
       align-items: center;
 
       img {
-        width: rem-calc(320);
-        height: rem-calc(320);
+        width: $size;
+        height: $size;
         border-radius: rem-calc(20);
         margin: rem-calc(16);
       }
       p {
         border: rem-calc(1) solid gray;
         border-radius: rem-calc(4);
-        width: rem-calc(320);
+        width: $size;
         color: white;
 
-        padding: rem-calc(8) 0;
+        padding: $smallPadding 0;
 
         .cube {
           width: rem-calc(40);
 
-          padding: 0 rem-calc(8);
-          margin: rem-calc(8);
+          padding: 0 $smallPadding;
+          margin: $smallPadding;
           border-radius: rem-calc(2);
           background-color: red;
         }
@@ -85,15 +89,18 @@
 }
 
 @media screen and (max-width: rem-calc(375)) {
+  // Variavel para tamanho da img e div abaixo
+  $size: rem-calc(280);
+
   :host {
     .initial-page {
       .img {
         img {
-          width: rem-calc(280);
-          height: rem-calc(280);
+          width: $size;
+          height: $size;
         }
         p {
-          width: rem-calc(280);
+          width: $size;
         }
       }
     }
@@ -101,6 +108,9 @@
 }
 
 @media screen and (max-width: rem-calc(320)) {
+  // Variavel para tamanho da img e div abaixo
+  $size: rem-calc(240);
+
   :host {
     .initial-page {
       .content {
@@ -113,11 +123,11 @@
       }
       .img {
         img {
-          width: rem-calc(240);
-          height: rem-calc(240);
+          width: $size;
+          height: $size;
         }
         p {
-          width: rem-calc(240);
+          width: $size;
         }
       }
     }
