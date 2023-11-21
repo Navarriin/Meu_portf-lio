@@ -70,6 +70,56 @@
       width: 90%;
       margin-top: rem-calc(50);
       gap: rem-calc(16);
+
+      .content {
+        align-items: center;
+        h1 {
+          font-size: rem-calc(45);
+        }
+        h2 {
+          font-size: rem-calc(28);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: rem-calc(375)) {
+  :host {
+    .initial-page {
+      .img {
+        img {
+          width: rem-calc(280);
+          height: rem-calc(280);
+        }
+        p {
+          width: rem-calc(280);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: rem-calc(320)) {
+  :host {
+    .initial-page {
+      .content {
+        h1 {
+          font-size: rem-calc(35);
+        }
+        h2 {
+          font-size: rem-calc(24);
+        }
+      }
+      .img {
+        img {
+          width: rem-calc(240);
+          height: rem-calc(240);
+        }
+        p {
+          width: rem-calc(240);
+        }
+      }
     }
   }
 }
