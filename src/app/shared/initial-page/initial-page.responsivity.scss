@@ -65,6 +65,14 @@
           h2 {
             font-size: rem-calc(24);
           }
+          .links {
+            a {
+              img {
+                height: 40px;
+                width: 40px;
+              }
+            }
+          }
         }
         .img {
           img {

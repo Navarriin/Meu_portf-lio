@@ -56,19 +56,20 @@
     .header {
       justify-content: space-between;
       width: 100vw;
+
       .menu {
         display: block;
         position: absolute;
         visibility: hidden;
+        overflow-y: hidden;
 
         width: 100vw;
         height: 0;
+        right: 0;
         z-index: 1000;
         top: rem-calc(70);
-        right: 0;
 
-        transition: 0.4s;
-        overflow-y: hidden;
+        transition: all 0.4s;
       }
 
       #nav.activate .menu {

@@ -32,6 +32,26 @@
 
         color: var(--primary);
       }
+      .links {
+        a {
+          margin-right: rem-calc(10);
+          margin-left: rem-calc(3.2);
+
+          svg {
+            margin-top: rem-calc(10);
+            padding: rem-calc(10);
+
+            background-color: var(--background-light);
+            border-radius: rem-calc(12);
+          }
+          .dio {
+            width: 80px;
+          }
+        }
+        svg:hover path {
+          fill: var(--primary);
+        }
+      }
     }
     .img {
       display: flex;
