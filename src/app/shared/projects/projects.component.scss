@@ -1,0 +1,9 @@
+@import "../../../config.scss/rem-calc.scss";
+
+:host {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
