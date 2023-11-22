@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { InitialPageComponent } from './initial-page/initial-page.component';
+import { DivisorComponent } from './divisor/divisor.component';
 
 @NgModule({
   declarations: [],
@@ -17,6 +18,7 @@ import { InitialPageComponent } from './initial-page/initial-page.component';
     InitialPageComponent,
     ProjectsComponent,
     SkillsComponent,
+    DivisorComponent,
   ],
   exports: [
     CommonModule,
@@ -25,6 +27,7 @@ import { InitialPageComponent } from './initial-page/initial-page.component';
     InitialPageComponent,
     ProjectsComponent,
     SkillsComponent,
+    DivisorComponent,
   ],
 })
 export class SharedModule {}

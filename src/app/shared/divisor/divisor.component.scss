@@ -1,0 +1,37 @@
+@import "../../../config.scss/rem-calc.scss";
+
+.divisor {
+  display: flex;
+  align-items: center;
+  h2 {
+    font-size: rem-calc(40);
+    margin: rem-calc(20);
+    color: var(--white-text);
+  }
+}
+
+@media screen and (max-width: rem-calc(620)) {
+  .divisor {
+    h2 {
+      width: 100%;
+      font-size: rem-calc(28);
+
+      img {
+        width: rem-calc(35);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: rem-calc(330)) {
+  .divisor {
+    h2 {
+      font-size: rem-calc(26);
+      margin: rem-calc(20);
+
+      img {
+        width: rem-calc(25);
+      }
+    }
+  }
+}
