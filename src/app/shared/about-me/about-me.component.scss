@@ -6,7 +6,7 @@
 
     width: 100%;
 
-    padding-bottom: rem-calc(150);
+    padding-bottom: rem-calc(50);
 
     .range {
       display: flex;
@@ -41,7 +41,7 @@
 
         p {
           padding-top: rem-calc(70);
-          color: white;
+          color: var(--light-text);
         }
       }
     }
