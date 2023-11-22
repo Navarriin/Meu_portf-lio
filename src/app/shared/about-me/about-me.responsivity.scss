@@ -1,0 +1,90 @@
+@import "../../../config.scss/rem-calc.scss";
+
+@media screen and (max-width: rem-calc(1024)) {
+  :host {
+    .about-me {
+      margin-top: rem-calc(200);
+
+      .range {
+        .content {
+          img {
+            height: rem-calc(250);
+            width: rem-calc(250);
+          }
+          p {
+            padding-top: rem-calc(20);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: rem-calc(1000)) {
+  :host {
+    .about-me {
+      .range {
+        .content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          p {
+            padding-top: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: rem-calc(620)) {
+    :host {
+      .about-me {
+        margin-top: rem-calc(150);
+
+        .range {
+          h2 {
+            width: 100%;
+            font-size: rem-calc(28);
+
+            img {
+              width: rem-calc(35);
+            }
+          }
+          .content {
+            padding-top: rem-calc(30);
+            img {
+              height: rem-calc(250);
+              width: rem-calc(250);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: rem-calc(330)) {
+    :host {
+      .about-me {
+        margin-top: rem-calc(40);
+
+        .range {
+          h2 {
+            font-size: rem-calc(26);
+            margin: rem-calc(20);
+
+            img {
+              width: rem-calc(25);
+            }
+          }
+          .content {
+            img {
+              height: rem-calc(200);
+              width: rem-calc(200);
+            }
+          }
+        }
+      }
+    }
+  }
+}

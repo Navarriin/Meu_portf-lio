@@ -6,6 +6,6 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './about-me.component.html',
-  styleUrl: './about-me.component.scss',
+  styleUrls: ['./about-me.component.scss', 'about-me.responsivity.scss'],
 })
 export class AboutMeComponent {}
