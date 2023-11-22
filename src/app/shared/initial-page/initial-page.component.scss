@@ -13,7 +13,7 @@
     width: 75%;
     height: 80%;
     margin: auto;
-    margin-top: rem-calc(220);
+    padding-top: rem-calc(220);
 
     .content {
       display: flex;
@@ -27,7 +27,7 @@
         color: white;
       }
       h2 {
-        font-size: rem-calc(32);
+        font-size: rem-calc(30);
         margin-left: rem-calc(3.2);
 
         color: var(--primary);
@@ -67,9 +67,6 @@
         width: $size;
         height: $size;
         margin: rem-calc(16);
-
-        border-radius: rem-calc(20);
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
       }
       p {
         color: white;
