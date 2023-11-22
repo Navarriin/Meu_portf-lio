@@ -1,0 +1,31 @@
+@import "../../src/config.scss/rem-calc.scss";
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: rem-calc(400);
+}
+
+@media screen and (max-width: rem-calc(1024)) {
+  main {
+    gap: rem-calc(170);
+  }
+}
+
+@media screen and (max-width: rem-calc(660)) {
+  main {
+    gap: rem-calc(160);
+  }
+}
+
+@media screen and (max-width: rem-calc(375)) {
+  main {
+    gap: rem-calc(80);
+  }
+}
+
+@media screen and (max-width: rem-calc(320)) {
+  main {
+    gap: rem-calc(60);
+  }
+}

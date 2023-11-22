@@ -3,8 +3,6 @@
 @media screen and (max-width: rem-calc(1024)) {
   :host {
     .about-me {
-      margin-top: rem-calc(200);
-
       .range {
         .content {
           img {
@@ -40,8 +38,6 @@
   @media screen and (max-width: rem-calc(620)) {
     :host {
       .about-me {
-        margin-top: rem-calc(150);
-
         .range {
           h2 {
             width: 100%;
@@ -66,8 +62,6 @@
   @media screen and (max-width: rem-calc(330)) {
     :host {
       .about-me {
-        margin-top: rem-calc(40);
-
         .range {
           h2 {
             font-size: rem-calc(26);
