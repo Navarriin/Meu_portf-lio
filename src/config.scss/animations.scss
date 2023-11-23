@@ -7,7 +7,7 @@
   overflow: hidden;
   white-space: nowrap;
 
-  animation: blinkCursor 400ms steps(40) infinite normal,
+  animation: blinkCursor 600ms steps(40) infinite normal,
     typing 2s steps(40) 1s normal both;
 }
 @keyframes typing {
