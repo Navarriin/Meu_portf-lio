@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -11,4 +11,8 @@ import { CommonModule } from '@angular/common';
     './initial-page.responsivity.scss',
   ],
 })
-export class InitialPageComponent {}
+export class InitialPageComponent {
+  constructor() {}
+
+  ngOnInit(): void {}
+}
