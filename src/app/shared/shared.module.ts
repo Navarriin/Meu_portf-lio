@@ -8,6 +8,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { InitialPageComponent } from './initial-page/initial-page.component';
 import { DivisorComponent } from './divisor/divisor.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [],
@@ -19,6 +20,7 @@ import { DivisorComponent } from './divisor/divisor.component';
     ProjectsComponent,
     SkillsComponent,
     DivisorComponent,
+    FooterComponent,
   ],
   exports: [
     CommonModule,
@@ -28,6 +30,7 @@ import { DivisorComponent } from './divisor/divisor.component';
     ProjectsComponent,
     SkillsComponent,
     DivisorComponent,
+    FooterComponent,
   ],
 })
 export class SharedModule {}
