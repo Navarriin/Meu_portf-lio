@@ -31,31 +31,6 @@
         margin-left: rem-calc(3.2);
 
         color: var(--primary);
-
-        border-right: rem-calc(3) solid var(--primary);
-
-        overflow: hidden;
-        white-space: nowrap;
-      }
-      .typing-animation {
-        animation: blinkCursor 400ms steps(40) infinite normal,
-          typing 2s steps(40) 1s normal both;
-      }
-      @keyframes typing {
-        from {
-          width: 0;
-        }
-        to {
-          width: rem-calc(340);
-        }
-      }
-      @keyframes blinkCursor {
-        from {
-          border-right-color: var(--primary);
-        }
-        to {
-          border-right-color: transparent;
-        }
       }
 
       .links {
@@ -90,18 +65,6 @@
       align-items: center;
 
       overflow: hidden;
-
-      #rotate {
-        animation: rotate 10s linear infinite;
-      }
-      @keyframes rotate {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
-      }
 
       img {
         width: $size;

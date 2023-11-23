@@ -1,0 +1,110 @@
+@import "../config.scss/rem-calc.scss";
+
+// Arquivo onde irei armazenar as Animações
+// Animação de "Escrita"
+.typing-animation {
+  border-right: rem-calc(3) solid var(--primary);
+  overflow: hidden;
+  white-space: nowrap;
+
+  animation: blinkCursor 400ms steps(40) infinite normal,
+    typing 2s steps(40) 1s normal both;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: rem-calc(350);
+  }
+}
+@keyframes blinkCursor {
+  from {
+    border-right-color: var(--primary);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+// Animação de rotate
+.rotate {
+  animation: rotate 10s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// Responsividade da animação de "Escrita"
+@media screen and (max-width: rem-calc(620)) {
+  .typing-animation {
+    animation: blinkCursor 400ms steps(40) infinite normal,
+      typing 2s steps(40) 1s normal both;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: rem-calc(320);
+    }
+  }
+  @keyframes blinkCursor {
+    from {
+      border-right-color: var(--primary);
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+}
+
+@media screen and (max-width: rem-calc(375)) {
+  .typing-animation {
+    animation: blinkCursor 400ms steps(40) infinite normal,
+      typing 2s steps(40) 1s normal both;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: rem-calc(300);
+    }
+  }
+  @keyframes blinkCursor {
+    from {
+      border-right-color: var(--primary);
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+}
+
+@media screen and (max-width: rem-calc(320)) {
+  .typing-animation {
+    animation: blinkCursor 400ms steps(40) infinite normal,
+      typing 2s steps(40) 1s normal both;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: rem-calc(275);
+    }
+  }
+  @keyframes blinkCursor {
+    from {
+      border-right-color: var(--primary);
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+}
