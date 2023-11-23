@@ -1,0 +1,27 @@
+@import "../../../config.scss/rem-calc.scss";
+
+:host {
+  .skills {
+    background-color: var(--background-header);
+    width: 100%;
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      width: 60%;
+      margin: auto;
+
+      .divisor {
+        margin: 0 auto rem-calc(60);
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: rem-calc(50);
+      }
+    }
+  }
+}
