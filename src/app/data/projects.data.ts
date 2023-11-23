@@ -1,18 +1,21 @@
 export const Projects = [
   {
     id: '1',
-    image: 'assets/prints/site_pokemon.png',
     title: 'NavaMon',
     description:
       'Este projeto é um site onde você pode escolher o pokemon que quiser ver os seus atributos.',
+    repository: 'https://github.com/Navarriin/Angular_Pokedex',
+    ar: 'https://navamon.netlify.app/',
+    target: '_blank',
   },
   {
     // Default
     id: '2',
-    image:
-      'https://gifs.eco.br/wp-content/uploads/2023/08/imagens-de-em-breve-png-1.png',
-    title: 'Projeto em andamento.',
+    title: 'Em Breve',
     description:
       'Aqui é onde ira ficar algum projeto meu assim que ficar completo.',
+    repository: '',
+    ar: '',
+    target: '_self',
   },
 ];

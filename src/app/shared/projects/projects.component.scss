@@ -5,10 +5,41 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 
     .box {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: rem-calc(1024)) {
+  :host {
+    .projects {
+      .box {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: rem-calc(660)) {
+  :host {
+    .projects {
+      .box {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: rem-calc(375)) {
+  :host {
+    .projects {
+      .box {
+        grid-template-columns: 1fr;
+      }
     }
   }
 }

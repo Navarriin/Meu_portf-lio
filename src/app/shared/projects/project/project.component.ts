@@ -11,9 +11,11 @@ import { Projects } from '../../../data/projects.data';
 })
 export class ProjectComponent {
   @Input() id: string = '0';
-  protected projectImage: string = '';
   protected projectTitle: string = '';
   protected projectdescription: string = '';
+  protected repository: string = '';
+  protected ar: string = '';
+  protected target: string = '';
 
   constructor() {}
 
@@ -23,8 +25,10 @@ export class ProjectComponent {
 
   setValuesComponents(id: string | null): void {
     const values = Projects.filter((value) => value.id === id)[0];
-    this.projectImage = values.image;
     this.projectTitle = values.title;
     this.projectdescription = values.description;
+    this.repository = values.repository;
+    this.ar = values.ar;
+    this.target = values.target;
   }
 }
