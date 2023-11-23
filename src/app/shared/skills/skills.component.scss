@@ -12,7 +12,7 @@
       flex-direction: column;
       justify-content: center;
 
-      width: 60%;
+      width: 70%;
       margin: auto;
 
       .divisor {
@@ -46,5 +46,15 @@
   .skills.openSkills {
     height: auto;
     overflow: visible;
+  }
+}
+
+@media screen and (max-width: rem-calc(1024)) {
+  :host {
+    .skills {
+      .box {
+        width: 90%;
+      }
+    }
   }
 }

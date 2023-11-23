@@ -38,3 +38,25 @@
     }
   }
 }
+
+@media screen and (max-width: rem-calc(375)) {
+  :host {
+    .skill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: rem-calc(30);
+
+      .description {
+        align-items: center;
+        width: 90%;
+      }
+      .img {
+        img {
+          margin-right: 0;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
