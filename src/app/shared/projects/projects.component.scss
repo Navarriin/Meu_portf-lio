@@ -6,10 +6,28 @@
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
+    overflow-y: hidden;
 
-    .box {
+    &__content {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .btn-primary {
+      margin: rem-calc(20) auto;
+      padding: rem-calc(10);
+
+      color: var(--white-text);
+      background-color: transparent;
+      border: rem-calc(1) solid var(--primary);
+      border-radius: rem-calc(4);
+
+      cursor: pointer;
+      transition: box-shadow 0.2s ease;
+
+      visibility: hidden;
+    }
+    .btn-primary:hover {
+      box-shadow: var(--primary) 0 0 5px;
     }
   }
 }
@@ -17,8 +35,15 @@
 @media screen and (max-width: rem-calc(1024)) {
   :host {
     .projects {
-      .box {
+      &__content {
         grid-template-columns: 1fr 1fr 1fr;
+        height: rem-calc(280);
+      }
+      .btn-primary {
+        visibility: visible;
+      }
+      &__content.open {
+        height: auto;
       }
     }
   }
@@ -27,7 +52,7 @@
 @media screen and (max-width: rem-calc(660)) {
   :host {
     .projects {
-      .box {
+      &__content {
         grid-template-columns: 1fr 1fr;
       }
     }
@@ -37,8 +62,9 @@
 @media screen and (max-width: rem-calc(375)) {
   :host {
     .projects {
-      .box {
+      &__content {
         grid-template-columns: 1fr;
+        height: rem-calc(270);
       }
     }
   }

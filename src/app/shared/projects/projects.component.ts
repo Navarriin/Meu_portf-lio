@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, Renderer2 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 // Meu component
@@ -12,4 +12,21 @@ import { ProjectComponent } from './project/project.component';
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
 })
-export class ProjectsComponent {}
+export class ProjectsComponent {
+  text: string = 'Ver mais';
+
+  constructor(private renderer: Renderer2, private element: ElementRef) {}
+
+  openProjects(): void {
+    const project: HTMLElement =
+      this.element.nativeElement.querySelector('.projects__content');
+
+    if (project.classList.contains('open')) {
+      this.renderer.removeClass(project, 'open');
+      this.text = 'Ver mais';
+    } else {
+      this.renderer.addClass(project, 'open');
+      this.text = 'Ver menos';
+    }
+  }
+}
