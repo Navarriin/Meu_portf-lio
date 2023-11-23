@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 // Meus SubComponents
@@ -13,4 +13,20 @@ import { SkillComponent } from './skill/skill.component';
 })
 export class SkillsComponent {
   ids: string[] = ['1', '2', '3', '4', '5'];
+  text: string = 'Ver mais';
+
+  constructor(private renderer: Renderer2, private element: ElementRef) {}
+
+  openSkills(): void {
+    const value: HTMLElement =
+      this.element.nativeElement.querySelector('.skills');
+
+    if (value.classList.contains('openSkills')) {
+      this.renderer.removeClass(value, 'openSkills');
+      this.text = 'Ver mais';
+    } else {
+      this.renderer.addClass(value, 'openSkills');
+      this.text = 'Ver menos';
+    }
+  }
 }
