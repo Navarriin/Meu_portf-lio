@@ -12,7 +12,9 @@
     display: flex;
     flex-direction: column;
 
-    cursor: grab;
+    transition: all 0.2s ease;
+
+    cursor: pointer;
 
     img {
       width: rem-calc(310);
@@ -38,5 +40,9 @@
         color: var(--light-text);
       }
     }
+  }
+  .box:hover {
+    transform: scale(1.01);
+    box-shadow: var(--primary) 0 0 5px;
   }
 }
