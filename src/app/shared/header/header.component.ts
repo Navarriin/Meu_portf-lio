@@ -11,19 +11,26 @@ import { CommonModule } from '@angular/common';
 export class HeaderComponent {
   constructor(private renderer: Renderer2, private element: ElementRef) {}
 
+  ngOnInit(): void {}
+
   @HostListener('window:scroll', ['$event'])
   onScroll(): void {
-    this.toggleMenu();
+    const active: HTMLElement = this.getElement();
+    this.renderer.removeClass(active, 'activate');
   }
 
   toggleMenu(): void {
-    const active: HTMLElement =
-      this.element.nativeElement.querySelector('#nav');
-
+    const active: HTMLElement = this.getElement();
     if (active.classList.contains('activate')) {
       this.renderer.removeClass(active, 'activate');
     } else {
       this.renderer.addClass(active, 'activate');
     }
+  }
+
+  getElement(): HTMLElement {
+    const active: HTMLElement =
+      this.element.nativeElement.querySelector('#nav');
+    return active;
   }
 }
