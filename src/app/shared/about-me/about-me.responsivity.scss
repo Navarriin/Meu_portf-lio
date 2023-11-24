@@ -1,5 +1,15 @@
 @import "../../../config.scss/rem-calc.scss";
 
+@media screen and (max-width: rem-calc(1440)) {
+  :host {
+    .about-me {
+      .range {
+        width: 80%;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: rem-calc(1024)) {
   :host {
     .about-me {
@@ -59,6 +69,8 @@
     :host {
       .about-me {
         .range {
+          width: 80%;
+
           h2 {
             font-size: rem-calc(26);
             margin: rem-calc(20);
