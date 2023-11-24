@@ -1,4 +1,4 @@
-import { Component, ElementRef, Renderer2 } from '@angular/core';
+import { Component, ElementRef, Renderer2, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -10,6 +10,11 @@ import { CommonModule } from '@angular/common';
 })
 export class HeaderComponent {
   constructor(private renderer: Renderer2, private element: ElementRef) {}
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll(): void {
+    this.toggleMenu();
+  }
 
   toggleMenu(): void {
     const active: HTMLElement =
