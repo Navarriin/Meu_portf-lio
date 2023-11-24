@@ -13,6 +13,10 @@
   --primary: #dd0b0b;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 // Configurações basicas da página
 body {
   font-family: "Roboto", sans-serif;
