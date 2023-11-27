@@ -34,4 +34,18 @@ export const Skills = [
       'Java é uma linguagem de programação e plataforma de computação liberada pela primeira vez pela Sun Microsystems em 1995. De um início humilde, ela evoluiu para uma grande participação no mundo digital dos dias atuais, oferecendo a plataforma confiável na qual muitos serviços e aplicativos são desenvolvidos.',
     image: 'assets/svg/java.svg',
   },
+  {
+    id: '6',
+    title: 'SpringBoot',
+    description:
+      'O Spring é um framework Java criado com o objetivo de facilitar o desenvolvimento de aplicações, explorando, para isso, os conceitos de Inversão de Controle e Injeção de Dependências.',
+    image: 'assets/svg/spring.svg',
+  },
+  {
+    id: '7',
+    title: 'PostgreSQL',
+    description:
+      'O PostgreSQL é um banco de dados objeto-relacional (sem relação com linguagens de programação orientadas a objetos), em que cada coisa criada é tratada como um objeto, tais como bancos de dados, tabelas, views, triggers, etc.',
+    image: 'assets/svg/postgresql.svg',
+  },
 ];
