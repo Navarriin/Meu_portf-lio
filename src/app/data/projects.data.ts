@@ -16,7 +16,7 @@ export const Projects = [
       'Meu projeto onde eu crio o meu próprio spotify para praticar CRUD.',
     repository: 'https://github.com/Navarriin/Sporifyyy',
     ar: 'https://github.com/Navarriin/Sporifyyy',
-    target: '_self',
+    target: '_blank',
   },
   {
     // Default
@@ -26,7 +26,7 @@ export const Projects = [
       'Projeto da API que fiz para o CRUD do meu Spotifyyy com Java e Spring',
     repository: 'https://github.com/Navarriin/API_spotfy',
     ar: 'https://github.com/Navarriin/API_spotfy',
-    target: '_self',
+    target: '_blank',
   },
   {
     // Default
