@@ -27,6 +27,15 @@
 
         color: var(--light-text);
       }
+      span {
+        font-size: rem-calc(14);
+        padding-top: rem-calc(14);
+        color: var(--primary);
+
+        .level {
+          color: var(--light-text);
+        }
+      }
     }
     .img {
       img {
