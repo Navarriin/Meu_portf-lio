@@ -57,8 +57,18 @@
       gap: rem-calc(30);
 
       .description {
-        align-items: center;
         width: 90%;
+
+        h3 {
+          margin: 0 auto;
+        }
+
+        h2 {
+          margin: 0 auto;
+        }
+        span {
+          padding-top: 0;
+        }
       }
       .img {
         img {
