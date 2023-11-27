@@ -44,7 +44,7 @@ export const Skills = [
     title: 'SpringBoot',
     description:
       'O Spring é um framework Java criado com o objetivo de facilitar o desenvolvimento de aplicações, explorando, para isso, os conceitos de Inversão de Controle e Injeção de Dependências.',
-    image: 'assets/svg/spring.svg',
+    image: 'assets/svg/spring-icon.svg',
     level: 'Básico',
   },
   {
