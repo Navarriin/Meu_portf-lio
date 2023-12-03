@@ -1,27 +1,33 @@
-# Portfolio
+# Meu Portfolio - Gabriel Navarro
+![Static Badge](https://img.shields.io/badge/TypeScript-%23D10B0B)
+![Static Badge](https://img.shields.io/badge/Angular-%23D10B0B)
+![Static Badge](https://img.shields.io/badge/SCSS-%23D10B0B)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.1.
+![Captura de tela 2023-12-03 135045](https://github.com/Navarriin/Meu_portfolio/assets/139160874/911dc117-72b7-43fe-832b-c6dc889bb145)
 
-## Development server
+## :smile: Descrição 
+Portfólio criado com o objetivo de apresentar meus trabalhos e habilidades para visitantes que estejam interessados em conhecer mais sobre mim como desenvolvedor. Com o uso de tecnologias modernas e atuais, o projeto é uma representação clara da minha experiência e habilidades técnicas.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### [Clique aqui para ver a aplicação no ar](https://gabrielnavarro.netlify.app/)
 
-## Code scaffolding
+### [Clique aqui para ver o repositório da aplicação](https://github.com/Navarriin/Meu_portfolio)
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## :pushpin: Como Utilizar
 
-## Build
+### 1. Clone o repositório
+```
+git clone https://github.com/Navarriin/Meu_portfolio.git
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 2. Instale as dependencias
+```
+npm install
+```
 
-## Running unit tests
+### 3. Suba a aplicação
+```
+ng serve
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Após realizar esta sequência de passos a aplicação já estará pronta para ser utilizada na porta -> http://localhost:4200/
