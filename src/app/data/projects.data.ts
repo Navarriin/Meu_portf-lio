@@ -9,7 +9,6 @@ export const Projects = [
     target: '_blank',
   },
   {
-    // Default
     id: '2',
     title: 'Spotifyyy',
     description:
@@ -19,7 +18,6 @@ export const Projects = [
     target: '_blank',
   },
   {
-    // Default
     id: '3',
     title: 'API do Spotifyyy',
     description:
@@ -29,8 +27,17 @@ export const Projects = [
     target: '_blank',
   },
   {
-    // Default
     id: '4',
+    title: 'Code Challenge Smart',
+    description:
+      'A aplicação consiste em uma página na qual você pode filtrar unidades abertas ou fechadas em horários específicos.',
+    repository: 'https://github.com/Navarriin/CodeChallengeSmart',
+    ar: 'https://code-challenger-smart.netlify.app/',
+    target: '_blank',
+  },
+  {
+    // Default
+    id: '5',
     title: 'Em Breve',
     description:
       'Aqui é onde ira ficar algum projeto meu assim que ficar completo.',
