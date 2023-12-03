@@ -14,7 +14,6 @@ export class SkillComponent {
   protected title: string = '';
   protected description: string = '';
   protected image: string = '';
-  protected skill: string = '';
 
   ngOnInit(): void {
     this.getAttributes(this.id);
@@ -27,6 +26,5 @@ export class SkillComponent {
     this.title = value.title;
     this.description = value.description;
     this.image = value.image;
-    this.skill = value.level;
   }
 }
