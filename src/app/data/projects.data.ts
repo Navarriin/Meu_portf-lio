@@ -36,8 +36,17 @@ export const Projects = [
     target: '_blank',
   },
   {
-    // Default
     id: '5',
+    title: 'BuzzFeed',
+    description:
+      'Site que baseado em suas respostas do quizz você saberá se seria um Herói ou um vilão',
+    repository: 'https://github.com/Navarriin/BuzzFeed',
+    ar: 'https://buzz-feed-quizz.netlify.app/',
+    target: '_blank',
+  },
+  {
+    // Default
+    id: '6',
     title: 'Em Breve',
     description:
       'Aqui é onde ira ficar algum projeto meu assim que ficar completo.',
