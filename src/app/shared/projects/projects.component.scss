@@ -10,8 +10,10 @@
     padding-top: rem-calc(70);
 
     &__content {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
     }
     .btn-primary {
       margin: rem-calc(20) auto;
