@@ -4,8 +4,8 @@
             <divisor string="Habilidades"></divisor>
         </div>
         <div class="content">
-            <ul *ngFor="let id of ids">
-                <li>
+            <ul>
+                <li *ngFor="let id of ids">
                     <skill id="{{ id }}"></skill>
                 </li>
             </ul>
