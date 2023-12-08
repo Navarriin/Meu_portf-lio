@@ -17,18 +17,12 @@
       width: 60%;
       margin: auto;
 
-      h2 {
-        font-size: rem-calc(40);
-        margin: rem-calc(20);
-        color: var(--white-text);
-      }
-
       .content {
         display: flex;
         flex-direction: row;
-        gap: rem-calc(80);
+        gap: rem-calc(100);
 
-        padding-top: rem-calc(80);
+        padding-top: rem-calc(50);
 
         img {
           height: rem-calc(300);
@@ -37,9 +31,9 @@
           border: 2px solid var(--primary);
           border-radius: 50% 80% / 70% 10%;
         }
-
         p {
-          padding-top: rem-calc(70);
+          font-size: 22px;
+          padding-top: rem-calc(30);
           color: var(--light-text);
         }
       }
