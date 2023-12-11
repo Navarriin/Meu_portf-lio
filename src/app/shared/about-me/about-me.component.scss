@@ -11,26 +11,27 @@
 
     .range {
       display: flex;
-      flex-direction: column;
+      gap: 8rem;
+
       align-items: center;
 
       width: 60%;
       margin: auto;
 
+      img {
+        height: rem-calc(500);
+        min-width: rem-calc(250);
+
+        border: 2px solid var(--primary);
+        border-radius: 50% 80% / 70% 10%;
+      }
+
       .content {
         display: flex;
-        flex-direction: row;
-        gap: rem-calc(100);
+        flex-direction: column;
+        align-items: center;
+        gap: rem-calc(50);
 
-        padding-top: rem-calc(50);
-
-        img {
-          height: rem-calc(300);
-          width: rem-calc(300);
-
-          border: 2px solid var(--primary);
-          border-radius: 50% 80% / 70% 10%;
-        }
         p {
           font-size: 22px;
           padding-top: rem-calc(30);

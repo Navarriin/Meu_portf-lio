@@ -14,7 +14,7 @@ import { ProjectComponent } from './project/project.component';
 })
 export class ProjectsComponent {
   text: string = 'Ver mais';
-  projects: string[] = ['1', '2', '3', '4', '5', '6'];
+  projects: string[] = ['1', '2', '3', '4', '5', '6', '7', '8'];
 
   constructor(private renderer: Renderer2, private element: ElementRef) {}
 

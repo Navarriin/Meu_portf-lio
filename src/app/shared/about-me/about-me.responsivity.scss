@@ -14,11 +14,10 @@
   :host {
     .about-me {
       .range {
+        img {
+          width: rem-calc(250);
+        }
         .content {
-          img {
-            height: rem-calc(250);
-            width: rem-calc(250);
-          }
           p {
             font-size: 20px;
             padding-top: rem-calc(20);
@@ -50,6 +49,9 @@
     :host {
       .about-me {
         .range {
+          display: flex;
+          flex-direction: column;
+          gap: 3rem;
           .content {
             padding-top: rem-calc(30);
             p {
@@ -67,12 +69,8 @@
     .about-me {
       .range {
         width: 80%;
-
-        .content {
-          img {
-            height: rem-calc(200);
-            width: rem-calc(200);
-          }
+        img {
+          width: rem-calc(180);
         }
       }
     }

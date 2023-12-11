@@ -8,11 +8,13 @@
     overflow-x: hidden;
     overflow-y: hidden;
     padding-top: rem-calc(70);
+    width: 80%;
+    margin: auto;
 
     &__content {
       ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        display: flex;
+        flex-wrap: wrap;
       }
     }
     .btn-primary {
@@ -39,7 +41,6 @@
   :host {
     .projects {
       &__content {
-        grid-template-columns: 1fr 1fr 1fr;
         height: rem-calc(320);
       }
       .btn-primary {
@@ -47,26 +48,6 @@
       }
       &__content.open {
         height: auto;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: rem-calc(660)) {
-  :host {
-    .projects {
-      &__content {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: rem-calc(480)) {
-  :host {
-    .projects {
-      &__content {
-        grid-template-columns: 1fr;
       }
     }
   }

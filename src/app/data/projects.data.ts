@@ -45,8 +45,25 @@ export const Projects = [
     target: '_blank',
   },
   {
-    // Default
     id: '6',
+    title: 'T O D O',
+    description: 'Projeto de lista de afazeres disponivel em modo claro e dark',
+    repository: 'https://github.com/Navarriin/TODO',
+    ar: 'https://github.com/Navarriin/TODO',
+    target: '_blank',
+  },
+  {
+    id: '7',
+    title: 'Pokemon list',
+    description:
+      'Projeto parecido com o anterior de pokemon mas usando ionic com foco em mobile.',
+    repository: 'https://github.com/Navarriin/Ionic__pokedex',
+    ar: 'https://github.com/Navarriin/Ionic__pokedex',
+    target: '_blank',
+  },
+  {
+    // Default
+    id: '8',
     title: 'Em Breve',
     description:
       'Aqui é onde ira ficar algum projeto meu assim que ficar completo.',
