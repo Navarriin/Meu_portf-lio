@@ -36,9 +36,9 @@ export const Skills = [
   },
   {
     id: '6',
-    title: 'PostgreSQL',
+    title: 'Java',
     description:
-      'O PostgreSQL é um banco de dados objeto-relacional (sem relação com linguagens de programação orientadas a objetos), em que cada coisa criada é tratada como um objeto, tais como bancos de dados, tabelas, views, triggers, etc.',
-    image: 'assets/svg/postgresql.svg',
+      'Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems, que em 2008 foi adquirido pela empresa Oracle Corporation.',
+    image: 'assets/svg/java.svg',
   },
 ];
