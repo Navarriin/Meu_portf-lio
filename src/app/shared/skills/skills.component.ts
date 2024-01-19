@@ -12,7 +12,7 @@ import { SkillComponent } from './skill/skill.component';
   styleUrl: './skills.component.scss',
 })
 export class SkillsComponent {
-  ids: string[] = ['1', '2', '3', '4', '5', '6'];
+  ids: string[] = ['1', '2', '3', '4', '5', '6', '7'];
   text: string = 'Ver mais';
 
   constructor(private renderer: Renderer2, private element: ElementRef) {}

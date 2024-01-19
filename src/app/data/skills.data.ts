@@ -41,4 +41,11 @@ export const Skills = [
       'Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems, que em 2008 foi adquirido pela empresa Oracle Corporation.',
     image: 'assets/svg/java.svg',
   },
+  {
+    id: '7',
+    title: 'Spring',
+    description:
+      'O Spring é um framework open source para a plataforma Java criado por Rod Johnson e descrito em seu livro "Expert One-on-One: JEE Design e Development". Trata-se de um framework não intrusivo, baseado nos padrões de projeto inversão de controle e injeção de dependência.',
+    image: 'assets/svg/spring.svg',
+  },
 ];
