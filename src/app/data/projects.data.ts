@@ -1,6 +1,6 @@
 export const Projects = [
   {
-    id: '3',
+    id: '4',
     title: 'Spotifyyy',
     description:
       'Meu projeto onde eu crio o meu próprio spotify para praticar CRUD.',
@@ -10,7 +10,7 @@ export const Projects = [
   },
 
   {
-    id: '2',
+    id: '3',
     title: 'Code Challenge Smart',
     description:
       'A aplicação consiste em uma página na qual você pode filtrar unidades abertas ou fechadas em horários específicos.',
@@ -20,7 +20,7 @@ export const Projects = [
   },
 
   {
-    id: '1',
+    id: '2',
     title: 'T O D O',
     description: 'Projeto de lista de afazeres disponivel em modo claro e dark',
     repository: 'https://github.com/Navarriin/TODO',
@@ -29,8 +29,17 @@ export const Projects = [
   },
 
   {
+    id: '1',
+    title: 'Menu restaurant',
+    description: 'Projeto de um menu de restaurante.',
+    repository: 'https://github.com/Navarriin/menu_restaurant',
+    ar: 'https://github.com/Navarriin/menu_restaurant',
+    target: '_blank',
+  },
+
+  {
     // Default
-    id: '4',
+    id: '5',
     title: 'Em Breve',
     description:
       'Aqui é onde ira ficar algum projeto meu assim que ficar completo.',
